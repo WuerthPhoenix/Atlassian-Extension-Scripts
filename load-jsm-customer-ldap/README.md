@@ -12,9 +12,16 @@ This is free software, and you are welcome to redistribute it under certain cond
 
 ### jira.conf
 - Script Configuration. This file needs to be filled with LDAP environment information
-- By default jira.conf looks for Bind password in path /opt/jira/.pwd_jira_ldap <br>
-   (password is the only alphanumeric string that should be in the file and of course you can change the path!)
-- Play with Ldap filters to restrict or enlarge the customer pool
+```
+     "tmpdirldpap" : "/tmp/ad.csv",  <- Temporary folder for ldpap csv
+     "ldaphost"    : "<LDAP SERVER IP/FQDN>" ,
+     "ldapbase"    : "cn=admin,dc=example,dc=com", 
+     "ldapbind"    : "<LDAP USER/Bindname>",
+     "ldappwd"     : "/opt/jira/.pwd_jira_ldap", <- password is the only alphanumeric string that should be in the file and of course you can change the path!
+     "ldapfilter"  : "(&(objectClass=user)(mail=*)(department=*))", <-Play with Ldap filters to restrict or enlarge the customer pool
+     "ldapfields"  : " department mail givenName sn sAMAccountName" <- List of LDAP Attributes to be extracted. Changing this list requires changes in the script!!
+```
+
 - in activedirectorydepartments you can specify all or specific entity. For example in case of "departments" you can specify them as
 ```
  "activedirectorydepartments" : [
