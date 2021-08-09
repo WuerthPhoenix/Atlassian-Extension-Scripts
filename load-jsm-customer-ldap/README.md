@@ -14,6 +14,20 @@ This is free software, and you are welcome to redistribute it under certain cond
 - Script Configuration. This file needs to be filled with LDAP environment information
 - By default jira.conf looks for Bind password in path /opt/jira/.pwd_jira_ldap <br>
    (password is the only alphanumeric string that should be in the file and of course you can change the path!)
+- in activedirectorydepartments you can specify all or specific entity. For example in case of "departments" you can specify them as
+```
+ "activedirectorydepartments" : [
+    { "department" : "department 1"  }, 
+    { "department" : "department 2"  } 
+  ]
+```
+or for all
+
+```
+ "activedirectorydepartments" : [
+    { "department" : "*"  } 
+  ]
+```
 
 ### ./load-jsm-customer-ldap.sh 
 - -h HELP<br>

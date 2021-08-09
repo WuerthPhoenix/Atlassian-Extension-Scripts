@@ -1,4 +1,4 @@
-## load-jsm-customer-ldap
+## delete-jsm-customers
 <br>
 Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
 
