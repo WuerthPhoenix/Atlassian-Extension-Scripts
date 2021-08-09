@@ -11,7 +11,7 @@ Simple script that simulates deletion and really (!) deletes Customers and Organ
 <br>
 LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/delete-jsm-customers/README.md "delete-jsm-customer readme")
 
-### jira.conf
+#### jira.conf
 jira.conf of different projects can be merged into one single file!
 ```
  {
@@ -66,5 +66,5 @@ jira.conf of different projects can be merged into one single file!
 
 ```
 
-### jira_variables.sh
+#### jira_variables.sh
 jira_variabiles.sh of different projects can be merged into one single file! 
