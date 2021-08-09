@@ -66,3 +66,5 @@ jira.conf of different projects can be merged into one single file!
 
 ```
 
+### jira_variables.sh
+jira_variabiles.sh of different projects can be merged into one single file! 
