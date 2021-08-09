@@ -15,6 +15,13 @@ This is free software, and you are welcome to redistribute it under certain cond
 
 ### delete-jsm-customers.sh 
 
+- -d    | --delete                                   (DANGER)   If not specified customers will not be deleted
+- -h    | --help                                     Brings up this menu
+- -c    | --customer-limit                           Expected customer amount limit (default 1000)
+- -o    | --org-limit                                Expected organization amount limit (default 200)
+- -f    | --fetch-maxresult                          Fetch size param (default 100)
+
+
 Demo mode execution example<br>
 ```
  ./delete-jsm-customers.sh -c 5000 -m 1000
