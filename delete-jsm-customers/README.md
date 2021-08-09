@@ -35,7 +35,11 @@ Delete mode execution example (DANGER ZONE)<br>
 Delete mode execution example (DANGER ZONE): considering up to 5000 customers and up to 1000 organizations <br>
 ```
  ./delete-jsm-customers.sh -c 5000 -m 1000 -d true
- 
+```
+
+or considering 10 customers in 1 organization
+
+``` 
  ./delete-jsm-customers.sh -c 10 -o 1 -f 5 -d true
 
 ```
