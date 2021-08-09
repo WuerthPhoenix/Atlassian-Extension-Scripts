@@ -1,6 +1,14 @@
 # Atlassian-Extension-Scripts
 Atlassian Extension Scripts by Würth Phoenix 
 
+#### LICENSE
+
+LICENSED UNDER GNU General Public License, v3  (see LICENSE.md for details)            
+Atlassian-Extension-Scripts Copyright (C) 2021  Würth Phoenix                          
+This program comes with ABSOLUTELY NO WARRANTY.                                        
+This is free software, and you are welcome to redistribute it under certain conditions;
+
+
 ## load-jsm-customer-ldap 
 Simple script that allows to upload Customers in Organizations structure to Jira Service Management (Cloud tested) from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. <br>
 <br>

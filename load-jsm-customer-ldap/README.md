@@ -2,7 +2,7 @@
 <br>
 Simple script that allows to upload Customers in Organizations structure into ATLASSIAN Jira Service Management (Cloud tested) from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. Strongly based on jq https://stedolan.github.io/jq/
 
-## LICENSE
+#### LICENSE
 
 LICENSED UNDER GNU General Public License, v3  (see LICENSE.md for details)            
 Atlassian-Extension-Scripts Copyright (C) 2021  Würth Phoenix                          

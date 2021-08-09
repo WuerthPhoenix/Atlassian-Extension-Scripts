@@ -2,7 +2,7 @@
 <br>
 Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
 
-## LICENSE
+#### LICENSE
 
 LICENSED UNDER GNU General Public License, v3  (see LICENSE.md for details)            
 Atlassian-Extension-Scripts Copyright (C) 2021  Würth Phoenix                          
