@@ -13,13 +13,16 @@ This is free software, and you are welcome to redistribute it under certain cond
 ### jira.conf
 - Script Configuration. This file needs to be filled with Atlassian environment access
 
-### delete-jsm-customers.sh 
+### delete-jsm-customers.sh
 
-- -d    | --delete                                   (DANGER)   If not specified customers will not be deleted
-- -h    | --help                                     Brings up this menu
-- -c    | --customer-limit                           Expected customer amount limit (default 1000)
-- -o    | --org-limit                                Expected organization amount limit (default 200)
-- -f    | --fetch-maxresult                          Fetch size param (default 100)
+ 
+Parameter               | 
+----------------------- | -------------
+-d  \| --delete         |  (DANGER)   If not specified customers will not be deleted
+-h  \| --help           |  Brings up this menu
+-c  \| --customer-limit |  Expected customer amount limit (default 1000) 
+-o  \| --org-limit      |  Expected organization amount limit (default 200)
+-f  \| --fetch-maxresult|  Fetch size param (default 100)
 
 
 Demo mode execution example<br>
