@@ -83,6 +83,25 @@ jira.conf of different projects can be merged into one single file!
         }
       ]
     }
+  ],
+  "insightRestAPI" : [
+             {
+                "identifier"     : "products",
+                "objectSchemaId" : "9",
+                "objectSchema"   : "Products",
+                "objectTypeId"   : "15",
+                "sampledatadir"  : "sample-data.json",
+                "objectTypeAttributes" : [
+                 { 
+                    "attributename" : "Name",
+                    "attributeid"   : "157" 
+                 },
+                 { 
+                    "attributename" : "Description",
+                    "attributeid"   : "160" 
+                 }
+                ]
+             }
   ]
 }
 
