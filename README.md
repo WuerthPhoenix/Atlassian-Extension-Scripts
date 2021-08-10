@@ -13,21 +13,21 @@ This is free software, and you are welcome to redistribute it under certain cond
 # load-jsm-customer-ldap 
 Simple script that allows to upload Customers in Organizations structure to Jira Service Management (Cloud tested) from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. <br>
 <br>
-LINK:  [load-jsm-customer-ldap](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/tree/main/load-jsm-customer-ldap "load-jsm-customer-ldap readme")
+LINK:  [load-jsm-customer-ldap](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/tree/main/load-jsm-customer-ldap "load-jsm-customer-ldap")
 
 ***
 
 # delete-jsm-customers
 Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
 <br>
-LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/delete-jsm-customers/README.md "delete-jsm-customer readme")
+LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/delete-jsm-customers "delete-jsm-customer")
 
 ***
 
 # load-jsm-cmdb
 Sript that loads data into Jira Service Management CMDB (new 2021 CLOUD Insight) and show how to create dependencies/relationships between two separate Object Types
 <br>
-LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/load-jsm-cmdb/README.md "load-jsm-cmdb readme")
+LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/load-jsm-cmdb "load-jsm-cmdb")
 
 ***
 
