@@ -1,6 +1,9 @@
 ## load-jsm-customer-ldap
 <br>
-Simple script that allows to upload Customers in Organizations structure into ATLASSIAN Jira Service Management (Cloud tested) from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. Strongly based on jq https://stedolan.github.io/jq/
+Simple script that allows to upload Customers in Organizations structure into ATLASSIAN Jira Service Management (Cloud tested) from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. Strongly based on jq https://stedolan.github.io/jq/<br>
+The script populate the complete Customers data: >> Organizations[] <> Customers(n) <> User Properties(n)<br>In Jira it will be possible to access to Customer properties with common SmartValues (i.e.  {{reporter.properties.contact_email.value}})    
+
+
 
 #### LICENSE
 
