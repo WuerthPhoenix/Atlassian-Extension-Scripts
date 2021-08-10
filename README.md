@@ -25,7 +25,7 @@ LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extensi
 ***
 
 # load-jsm-cmdb
-Coming soon 
+Sript that loads data into Jira Service Management CMDB (new 2021 CLOUD Insight) and show how to create dependencies/relationships between two separate Object Types
 <br>
 LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/load-jsm-cmdb/README.md "load-jsm-cmdb readme")
 

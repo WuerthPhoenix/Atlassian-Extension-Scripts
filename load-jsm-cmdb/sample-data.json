@@ -1,0 +1,52 @@
+[
+  {
+    "PRODUCTNAME": "Product 1",
+    "PRODUCTDESCRIPTION": "This is the Product 1 Description",
+    "PRODUCT_ORGANIZATION": "MyORG1",
+    "PRICE": "0,00 EURO",
+    "SEARCHKEY": "Product1_NoSpace",
+    "PRODUCT_ITEMNUMBER": "129",
+    "COMPONENTS": []
+  },
+  {
+    "PRODUCTNAME": "Product 3",
+    "PRODUCTDESCRIPTION": "This is the Product 1 Description",
+    "PRODUCT_ORGANIZATION": "MyORG1",
+    "PRICE": "0,00 EURO",
+    "PRODUCT_ITEMNUMBER": "1234",
+    "SEARCHKEY": "Product3_NoSpace",
+    "COMPONENTS": [
+      {
+        "Name": "Component 3",
+        "COMPONENTDESCRIPTION": "This is the Component 3 Description",
+        "COMPONENT_MODEL": "Model ATY",
+        "SEARCHKEY": "COMPONENT3_NoSpace",
+        "PRODUCT_ITEMNUMBER": "1234"
+      }
+    ]
+  },
+  {
+    "PRODUCTNAME": "Product 4",
+    "PRODUCTDESCRIPTION": "This is the Product 1 Description",
+    "PRODUCT_ORGANIZATION": "MyORG1",
+    "PRICE": "0,00 EURO",
+    "PRODUCT_ITEMNUMBER": "123",
+    "SEARCHKEY": "Product4_NoSpace",
+    "COMPONENTS": [
+      {
+        "Name": "Component 1",
+        "COMPONENTDESCRIPTION": "This is the Component 1 Description",
+        "COMPONENT_MODEL": "Model ABC",
+        "SEARCHKEY": "COMPONENT1_NoSpace",
+        "PRODUCT_ITEMNUMBER": "123"
+      },
+      {
+        "Name": "Component 2",
+        "COMPONENTDESCRIPTION": "This is the Component 2 Description",
+        "COMPONENT_MODEL": "Model ZHS",
+        "SEARCHKEY": "COMPONENT2_NoSpace",
+        "PRODUCT_ITEMNUMBER": "123"
+      }
+    ]
+  }
+]
