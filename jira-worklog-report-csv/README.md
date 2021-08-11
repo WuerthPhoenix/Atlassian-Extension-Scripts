@@ -32,10 +32,9 @@ This is free software, and you are welcome to redistribute it under certain cond
 ```
 
 ### jira-worklog-report-cse.sh
-
--q    | --jql-query               (option)              default: "updated > startOfMonth() and updated < endOfMonth() and worklogAuthor != empty"
--t    | --create-ticket           (option)              create a ticket in jira.conf specified project by attaching the report
--h    | --help                                          Brings up this menu
+- -q    | --jql-query               (option)              default: "updated > startOfMonth() and updated < endOfMonth() and worklogAuthor != empty"
+- -t    | --create-ticket           (option)              create a ticket in jira.conf specified project by attaching the report
+- -h    | --help                                          Brings up this menu
 
 
 

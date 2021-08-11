@@ -11,9 +11,9 @@ This is free software, and you are welcome to redistribute it under certain cond
 
 
 ### icinga2-opsgenie-services.sh
--t    | --team                                     OpsGenie Team Id (REQUIRED)
--a    | --api-token                                OpsGenie Api Token  (REQUIRED)
--u    | --opsgenie-url                             OpsGenie instance URL  (REQUIRED)
+- -t    | --team                                     OpsGenie Team Id (REQUIRED)
+- -a    | --api-token                                OpsGenie Api Token  (REQUIRED)
+- -u    | --opsgenie-url                             OpsGenie instance URL  (REQUIRED)
 
 #### Known issues
 Currently the script does not support Business Process with spaces.
