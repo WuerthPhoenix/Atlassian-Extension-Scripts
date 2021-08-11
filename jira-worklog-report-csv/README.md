@@ -1,6 +1,6 @@
 ## jira-worklog-report-csv
 <br>
-Simple script that creates a CSV file with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If required, the script attaches the output report to a new Jira Issue for easier access.
+Script that creates a CSV report with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
 
 #### LICENSE
 

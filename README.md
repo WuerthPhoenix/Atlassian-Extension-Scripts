@@ -31,7 +31,13 @@ LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scri
 
 ***
 
+## jira-worklog-report-csv
+<br>
+Script that creates a CSV report with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
+<br>
+LINK:  [jira-worklog-report-csv](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/jira-worklog-report-csv "jira-worklog-report-csv")
 
+***
 
 #### jira.conf
 jira.conf of different projects can be merged into one single file!
@@ -84,6 +90,31 @@ jira.conf of different projects can be merged into one single file!
       ]
     }
   ],
+  "export" : {
+     "worklogfilter" : "jira-worklog-report-csv.jq",
+     "worklogoutputfile" : "/tmp/jira-worklog-report-csv.csv",
+     "worklogproject" : "<JIRA PROJECT FOR ISSUE CREATION>"
+  },
+  "fields": [
+    {
+      "name": "customfield_XXXXX",
+      "contextid": "10XXX",
+      "displayName": "CustomField01",
+      "notes": "Sample custom field to be included in the report."
+    }
+   ],
+   "userproperties" : [
+      {
+         "key" : "ResourceID",
+         "value1" : "<JIRA USER ACCOUNT ID>",
+         "value2" : "<JIRA USER LABEL>"
+      },
+      {
+         "key" : "ResourceID",
+         "value1" : "<JIRA USER 2 ACCOUNT ID>",
+         "value2" : "<JIRA USER 2 LABEL>"
+      }
+  ]
   "insightRestAPI" : [
              {
                 "identifier"     : "products",
