@@ -1,5 +1,5 @@
 # Atlassian-Extension-Scripts
-Atlassian Extension Scripts by Würth Phoenix 
+Atlassian Extension Scripts by Würth Phoenx
 
 #### LICENSE
 
@@ -11,22 +11,30 @@ This is free software, and you are welcome to redistribute it under certain cond
 ***
 
 # load-jsm-customer-ldap 
-Simple script that allows to upload Customers in Organizations structure to Jira Service Management (Cloud tested) from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. <br>
+Simple script that allows to upload Customers in Organizations structure from a local common LDAP service (i.e. Active Directory). The script supports multi-projects configuration. <br>
 <br>
 LINK:  [load-jsm-customer-ldap](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/tree/main/load-jsm-customer-ldap "load-jsm-customer-ldap")
+
+- Jira Service Management
 
 ***
 
 # jira-worklog-report-csv
-Script that creates a CSV report with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
+Script that creates a CSV report with all  Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
 <br>
 LINK:  [jira-worklog-report-csv](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/jira-worklog-report-csv "jira-worklog-report-csv")
+
+- Jira
+- Jira Service Management
+
 ***
 
 # load-jsm-cmdb
 Sript that loads data into Jira Service Management CMDB (new 2021 CLOUD Insight) and show how to create dependencies/relationships between two separate Object Types
 <br>
 LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/load-jsm-cmdb "load-jsm-cmdb")
+
+- Jira Service Management
 
 ***
 
@@ -35,6 +43,10 @@ Script that performs the syncronization between [Icinga2 Business Process Module
 <br>
 LINK:  [icinga2-opsgenie-services](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/icinga2-opsgenie-services "icinga2-opsgenie-services")
 
+- Jira Service Management (cloud) 
+- OpsGenie
+- Icinga2
+- NetEye4
 
 ***
 
@@ -42,6 +54,8 @@ LINK:  [icinga2-opsgenie-services](https://github.com/WuerthPhoenix/Atlassian-Ex
 Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
 <br>
 LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/delete-jsm-customers "delete-jsm-customer")
+
+- Jira Service Management
 
 ***
 
