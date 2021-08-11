@@ -17,10 +17,11 @@ LINK:  [load-jsm-customer-ldap](https://github.com/WuerthPhoenix/Atlassian-Exten
 
 ***
 
-# delete-jsm-customers
-Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
+# jira-worklog-report-csv
 <br>
-LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/delete-jsm-customers "delete-jsm-customer")
+Script that creates a CSV report with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
+<br>
+LINK:  [jira-worklog-report-csv](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/jira-worklog-report-csv "jira-worklog-report-csv")
 
 ***
 
@@ -31,13 +32,15 @@ LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scri
 
 ***
 
-## jira-worklog-report-csv
+# delete-jsm-customers
+Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
 <br>
-Script that creates a CSV report with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
-<br>
-LINK:  [jira-worklog-report-csv](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/jira-worklog-report-csv "jira-worklog-report-csv")
+LINK:  [delete-jsm-customers](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/delete-jsm-customers "delete-jsm-customer")
 
 ***
+
+
+
 
 #### jira.conf
 jira.conf of different projects can be merged into one single file!
