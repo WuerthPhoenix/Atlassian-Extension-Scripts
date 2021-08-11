@@ -30,6 +30,14 @@ LINK:  [load-jsm-cmdb](https://github.com/WuerthPhoenix/Atlassian-Extension-Scri
 
 ***
 
+## icinga2-opsgenie-services
+Script that performs the syncronization between [Icinga2 Business Process Module](https://icinga.com/docs/icinga-business-process-modelling/latest/doc/03-Getting-Started/ "")  and OpsGenie Services.  
+<br>
+LINK:  [icinga2-opsgenie-services](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/icinga2-opsgenie-services "icinga2-opsgenie-services")
+
+
+***
+
 # delete-jsm-customers
 Simple script that simulates deletion and really (!) deletes Customers and Organizations from ATLASSIAN Jira Service Management (Cloud tested) 
 <br>
