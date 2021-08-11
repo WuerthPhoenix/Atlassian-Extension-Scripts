@@ -18,11 +18,9 @@ LINK:  [load-jsm-customer-ldap](https://github.com/WuerthPhoenix/Atlassian-Exten
 ***
 
 # jira-worklog-report-csv
-<br>
 Script that creates a CSV report with all the Jira/Jira Service Managenent Worklog registration entries based on a JQL call  (Cloud tested). If necessary the script attaches the output report to a new Jira Issue for easier access.
 <br>
 LINK:  [jira-worklog-report-csv](https://github.com/WuerthPhoenix/Atlassian-Extension-Scripts/blob/main/jira-worklog-report-csv "jira-worklog-report-csv")
-
 ***
 
 # load-jsm-cmdb
