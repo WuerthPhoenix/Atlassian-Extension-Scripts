@@ -52,7 +52,7 @@ if [ -z $TeamId ] || [ -z $opsgenieapitoken ] || [ -z $opsgenieAPIURL ] ; then
 else
 
     echo ""
-    echo "...executing script for (OpsGenie Team:$project | OpsGenie API:$opsgenieapitoken | OpsGenie URL:$opsgenieAPIURL)"
+    echo "...executing script for (OpsGenie Team:$TeamId to OpsGenie URL:$opsgenieAPIURL)"
     echo ""
 
 fi
