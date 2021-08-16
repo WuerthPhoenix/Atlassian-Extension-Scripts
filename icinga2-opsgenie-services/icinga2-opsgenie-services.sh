@@ -7,15 +7,14 @@
 #" | This program comes with ABSOLUTELY NO WARRANTY.                                        |"
 #" | This is free software, and you are welcome to redistribute it under certain conditions;|"
 #"-------------------------------------------------------------------------------------------"
-# Deni 2020
 
 usage()
 {
 cat << EOF
 
--t    | --team                                     OpsGenie Team Id       (REQUIRED)
--a    | --api-token                                OpsGenie Api Token     (REQUIRED)
--u    | --opsgenie-url                             OpsGenie instance URL  (REQUIRED)
+-t    | --team                                     OpsGenie Team Id
+-a    | --api-token                                OpsGenie Api Token
+-u    | --opsgenie-url                             OpsGenie instance URL
 
 EOF
 }
@@ -51,12 +50,14 @@ if [ -z $TeamId ] || [ -z $opsgenieapitoken ] || [ -z $opsgenieAPIURL ] ; then
     echo ""
     exit
 else
- 
+
     echo ""
     echo "...executing script for (OpsGenie Team:$project | OpsGenie API:$opsgenieapitoken | OpsGenie URL:$opsgenieAPIURL)"
     echo ""
-   
+
 fi
+
+countCreatedHosts=0
 
 
 ## GET Business Process using Icinga cli command
@@ -65,6 +66,7 @@ echo " Get Business Processes from Icinga2 / NetEye"
 echo " "
 hosts=$(icingacli businessprocess process list )
 neteyearray=()
+IFS=$'\n'
 for row in $hosts; do
     if [[ $row =~ ^\( ]];then
         continue
@@ -90,7 +92,7 @@ HostDiff=()
 for i in "${neteyearray[@]}"; do
     skip=
     for j in "${opsgeniearray[@]}"; do
-        [[ $i == $j ]] && { skip=1; break; }
+        [[ $i == $j ]] && { skip=1; break;  }
     done
     [[ -n $skip ]] || HostDiff+=("$i")
 done
@@ -99,15 +101,18 @@ done
 hostlist=""
 for i in "${HostDiff[@]}"
 do
+           countCreatedHosts=$((countCreatedHosts+1))
            json='{"teamId": "'$TeamId'","name": "'$i'", "tags": ["neteye","business process"] }'
-           curl -X POST  "$opsgenieAPIURL" -H "Authorization: GenieKey $opsgenieapitoken" -H "Content-Type: application/json" --data "$json" -v   # | jq '.objectKey , .avatar.url16')
+           curl -X POST  "$opsgenieAPIURL" -H "Authorization: GenieKey $opsgenieapitoken" -H "Content-Type: application/json" --data "$json"
            hostlist+=" ( $i ) "
 done
 
 if [ -n "$hostlist" ]
 then
-  echo "OK -  syncronization succesfully executed: created or updated objects: [$hostlist] "
-else
-  echo "OK -  syncronization succesfully executed: no new hosts have been created or updated"
+  echo "OK -  syncronization succesfully executed: created or updated objects: [$hostlist] | business_processes_uploaded=$countCreatedHosts "
+ else
+  echo "OK -  syncronization succesfully executed: no new hosts have been created or updated | created=0"
 fi
 exit 0
+
+
