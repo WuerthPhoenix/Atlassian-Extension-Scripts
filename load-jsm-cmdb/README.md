@@ -54,10 +54,19 @@ Oblect Attributes: see jira.conf for details and adjust the attributeIds based o
 
 
 ## Execution example
+- in order to be compliant with future release it's stringly suggested to make a copy of load-jsm-cmdb.sh to load-jsm-cmdb-<your instance name>.sh
+- If new classes are configured also the script requires some adjustments!
 ```
- ./load-jsm-cmdb.sh 
+ ./load-jsm-cmdb-<your instance name>.sh 
 ```
 
 ### jira_variables.sh
-Variable configuration - no changes required
+Variable configuration
+If new classes are configured also these two variable instances should be updated with correct idn argument specified in identifier in jira.conf:
+```
+productdatajsonfile="$2/$( jq -r  --arg idn "product"    ' .insightRestAPI[]|select(.identifier==$idn) | .sampledatadir ' "$config_file" )"
+componentdatajsonfile="$2/$( jq -r --arg idn "components" ' .insightRestAPI[]|select(.identifier==$idn) | .sampledatadir ' "$config_file" )"
+
+```
+
 

@@ -10,11 +10,13 @@ usage()
 cat << EOF
 
 -h    | --help                                      Brings up this menu
+-v    | --verbose                                   Echo Update/Create call
+
 
 EOF
 }
 
-
+verbose="false"
 while [ "$1" != "" ]; do
     case $1 in
         -h | --help )    usage
@@ -22,6 +24,10 @@ while [ "$1" != "" ]; do
             echo 
             exit
         ;;
+        -v | --verbose )
+            verbose="true"
+        ;;
+
     esac
     shift
 done
@@ -37,7 +43,10 @@ version="1"
 
 createJson4products(){
      start=0
-     numberOfAttr=6 # TODO  - Improvement - Change if you add/remove attributes, the Length of Json can be used to retrieve this information
+     numberOfAttr="$( jq -r --arg  objectType $2 '   .insightRestAPI[]
+                                                      | select(.identifier==$objectType)
+                                                      | .objectTypeAttributes|length ' "$config_file" )"
+
      IFS=";"
      objectTypeId="$( jq -r --arg  objectType $2 '   .insightRestAPI[]
                                                       | select(.identifier==$objectType)
@@ -103,7 +112,10 @@ createJson4products(){
 
 createJson4components(){
      start=0
-     numberOfAttr=5 # TODO  - Improvement - Change if you add/remove attributes, the Length of Json can be used to retrieve this information
+     numberOfAttr="$( jq -r --arg  objectType $2 '   .insightRestAPI[]
+                                                      | select(.identifier==$objectType)
+                                                      | .objectTypeAttributes|length ' "$config_file" )"
+
      IFS=";"
      objectTypeId="$( jq -r  --arg objectType $2 '   .insightRestAPI[]
                                                            | select(.identifier==$objectType)
@@ -271,7 +283,11 @@ createInsightObject(){
                  update=$(curl -s --user $jirauser:$jiraapitoken -X PUT $putInsightUrl               \
 								 -H 'Content-type: application/json' \
 								 -H 'Accept: application/json' -d "$payload" )
-                 #echo $update
+                 if [ "$verbose"  == "true" ]; then
+                   echo "--------------------------- UPDATE CALL -------------------------------"
+                   echo
+                   echo $update
+                fi
              else
                echo "  (++)  [$2] A new object with SearchKey [$line] will be created"
                  ##########################
@@ -281,7 +297,11 @@ createInsightObject(){
                  create=$(curl -s --user $jirauser:$jiraapitoken -X POST $postInsightUrl             \
 								 -H 'Content-type: application/json' \
 								 -H 'Accept: application/json' -d "$payload" )
-                 #echo $create
+                 if [ "$verbose"  == "true" ]; then
+                   echo "--------------------------- CREATE CALL -------------------------------"
+                   echo
+                   echo $create
+                fi
              fi
  
            done 

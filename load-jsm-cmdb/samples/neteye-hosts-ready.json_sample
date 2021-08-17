@@ -1,0 +1,17 @@
+[
+  {
+    "PRODUCTNAME": "SampleHost",
+    "PRODUCTDESCRIPTION": "Loaded from <NETEYE URL>",
+    "PRODUCT_ORGANIZATION": "Acme",
+    "SEARCHKEY": "SampleHost_Acme",
+    "LINK": "https://<NETEYE URL>/neteye/monitoring/host/show?host=SampleHost"
+  },
+  {
+    "PRODUCTNAME": "switch001-cisco-docker",
+    "PRODUCTDESCRIPTION": "Loaded from <NETEYE URL>",
+    "PRODUCT_ORGANIZATION": "Acme",
+    "SEARCHKEY": "switch001-cisco-docker_Acme",
+    "LINK": "https://<NETEYE URL>/neteye/monitoring/host/show?host=switch001-cisco-docker"
+  }
+]
+
