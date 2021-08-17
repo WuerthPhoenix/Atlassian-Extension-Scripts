@@ -1,0 +1,83 @@
+{
+  "jirahost": "https://<Jira Service Management Cloud instance>.atlassian.net",
+  "jirauser": "<API USER>",
+  "jiraapitoken": "<API TOKEN>",
+  "logredirect" : "false",
+  "logdir": "/tmp/",
+  "insightRestAPI" : [
+             {
+                "identifier"     : "products",
+                "objectSchemaId" : "9",
+                "objectSchema"   : "Products",
+                "objectTypeId"   : "15",
+                "sampledatadir"  : "sample-data.json",
+                "objectTypeAttributes" : [
+                 { 
+                    "attributename" : "Name",
+                    "attributeid"   : "157" 
+                 },
+                 { 
+                    "attributename" : "Description",
+                    "attributeid"   : "160" 
+                 },
+                 { 
+                    "attributename" : "Organization",
+                    "attributeid"   : "161" 
+                 },
+                 { 
+                    "attributename" : "SearchKey",
+                    "attributeid"   : "172" 
+                 },
+                 { 
+                    "attributename" : "ItemNumber",
+                    "attributeid"   : "170" 
+                 },
+                 { 
+                    "attributename" : "Price",
+                    "attributeid"   : "168" 
+                 }
+                ]
+             }, 
+             {
+                "identifier"     : "components",
+                "objectSchemaId" : "10",
+                "objectSchema"   : "Components",
+                "objectTypeId"   : "16",
+                "sampledatadir"  : "sample-data.json",
+		 "objectTypeAttributes" : [
+                 {
+                    "attributename" : "Name",
+                    "attributeid"   : "163"
+                 },
+                 {
+                    "attributename" : "ComponentDescription",
+                    "attributeid"   : "166"
+                 },
+                 {
+                    "attributename" : "ProductItemNumber",
+                    "attributeid"   : "171"
+                 },
+                 { 
+                    "attributename" : "SearchKey",
+                    "attributeid"   : "173" 
+                 },
+                 {
+                    "attributename" : "ComponentModel",
+                    "attributeid"   : "167",
+                    "note"          : "Some Notes can be inserted here.."
+                 },
+                 {
+                    "attributename"               : "ProductLink",
+                    "attributeid"                 : "169",
+                    "targetobjectTypeId"          : "15",
+                    "targetSchemaId"              : "9",
+                    "targetobjectTypeAttributeId" : "170",
+                    "sourceobjectTypeAttributeId" : "171",
+                    "note"                        : "Type reference to link Components with Products"
+                 }
+                 ]
+             }
+      
+  ]
+
+}
