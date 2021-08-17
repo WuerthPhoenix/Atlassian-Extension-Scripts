@@ -17,6 +17,11 @@ and the target is to make a Composite aggregation among a pool of Component and 
 ```
 [COMPONENTS]n<>------1[PRODUCTS]
 ```
+
+## jira.conf
+- copy jira.conf_orig to jira.conf
+
+
 ## Products (Key: PROD)
 Object Schema: Products
 Object Type: Sample Product

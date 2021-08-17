@@ -11,6 +11,7 @@ This is free software, and you are welcome to redistribute it under certain cond
 
 
 ### jira.conf
+- copy jira.conf_orig to jira.conf
 - Script Configuration. This file needs to be filled with Atlassian environment access.
 - worklogproject: a valid Jira project KEY should be specified if script parameter -t (create issue) will be used 
 - FIELDS: Extract customfield. In the configuration file there is an example based on CustomField01. Before you run the script exsiting customfield_XXXXX must be set as name to this section.  

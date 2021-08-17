@@ -14,6 +14,7 @@ This is free software, and you are welcome to redistribute it under certain cond
 
 
 ### jira.conf
+- copy jira.conf_orig to jira.conf
 - Script Configuration. This file needs to be filled with LDAP environment information
 ```
      "tmpdirldpap" : "/tmp/ad.csv",  <- Temporary folder for ldpap csv
