@@ -1,5 +1,5 @@
 # Atlassian-Extension-Scripts
-Atlassian Extension Scripts by Würth Phoenx
+Atlassian Extension Scripts by Würth Phoenix
 
 #### LICENSE
 
